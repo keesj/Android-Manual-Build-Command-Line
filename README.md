@@ -32,6 +32,6 @@ On bionic things look like this (see https://wiki.debian.org/AndroidTools/IntroB
 	echo 'export PATH=/usr/lib/android-ndk/:${PATH}' >> .bashrc
 	
 
-	git clone https://github.com/x8-999-github/Android-Manual-Build-Command-Line.git	
-	cd hello-jni
+	git clone https://github.com/keesj/AndroidMakefile
+	cd AndroidMakefile/hello-jni
 	make
