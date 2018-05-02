@@ -22,7 +22,16 @@ build : ./bin/hellojni.apk
 	aapt package -v -f -M ./AndroidManifest.xml -S ./res \
 		-I $(ANDROID_HOME)/platforms/${MK_ANDROID_PLATFORM}/android.jar \
 		-F $@ ./bin
-	aapt add $@ libs/arm64-v8a/libhello.so
+	rm -rf lib
+	cp -r libs lib
+	aapt add $@ lib/armeabi-v7a/libhello.so
+	aapt add $@ lib/mips64/libhello.so
+	aapt add $@ lib/arm64-v8a/libhello.so
+	aapt add $@ lib/x86_64/libhello.so
+	aapt add $@ lib/armeabi/libhello.so
+	aapt add $@ lib/x86/libhello.so
+	aapt add $@ lib/mips/libhello.so
+
 		
 ./bin/classes.dex : ./obj/com/example/hellojni/HelloJNI.class
 	mkdir -p bin
