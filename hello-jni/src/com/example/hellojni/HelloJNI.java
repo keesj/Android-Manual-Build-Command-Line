@@ -21,7 +21,7 @@ public class HelloJNI extends Activity
     public native String  stringFromJNI();
 	
     static {
-		Log.i("amo", "Trying to load shared library!");
+	Log.i("amo", "Trying to load shared library!");
         System.loadLibrary("hellojni");
     }
 }
