@@ -25,6 +25,7 @@ build : ./bin/hellojni.apk
 	aapt add $@ libs/arm64-v8a/libhello.so
 		
 ./bin/classes.dex : ./obj/com/example/hellojni/HelloJNI.class
+	mkdir -p bin
 	$(ANDROID_HOME)/build-tools/${MK_ANDROID_BUILD_TOOLS}/dx --dex --verbose --output=$@ ./obj
 	
 ./lib/arm64-v8a/libhello.so :
