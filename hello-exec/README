@@ -1,0 +1,14 @@
+Example of creating an executable for android
+Just bare bones (no jni/Android) If you want native activities or understand binder and such have a good look at https://github.com/keesj/Android-HelloWorldService
+
+
+Building:
+call ndk-build from this directory
+adb push lib/main /data/
+
+Debug:
+install gdb-multiarch
+adb forward tcp:1235 tcp:1234
+
+
+
