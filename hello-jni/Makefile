@@ -1,4 +1,4 @@
-all: build deploy 
+all: build
 MK_ANDROID_PLATFORM=android-23
 MK_ANDROID_BUILD_TOOLS=24.0.2
 
