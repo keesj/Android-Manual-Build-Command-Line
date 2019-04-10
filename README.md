@@ -35,3 +35,9 @@ On bionic things look like this (see https://wiki.debian.org/AndroidTools/IntroB
 	git clone https://github.com/keesj/AndroidMakefile
 	cd AndroidMakefile/hello-jni
 	make
+
+
+# Running
+
+am start -n com.example.hellojni/com.example.hellojni.HelloJNI
+
