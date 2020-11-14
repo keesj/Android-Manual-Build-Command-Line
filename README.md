@@ -9,7 +9,7 @@ provided by the guardian project. Because of this path of tools are on different
 On bionic things look like this (see https://wiki.debian.org/AndroidTools/IntroBuildingApps )
 
 	# using lxc containers (as root/using sudo)
-	lxc-create -t download -n android-dev -- --dist ubuntu --release bionic --arch amd64
+	lxc-create -t download -n android-dev -- --dist ubuntu --release focal --arch amd64
 	lxc-start --name android-dev
 	lxc-attach --name android-dev
 	apt-get update 
