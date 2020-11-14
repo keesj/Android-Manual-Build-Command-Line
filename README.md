@@ -21,7 +21,8 @@ On bionic things look like this (see https://wiki.debian.org/AndroidTools/IntroB
 		google-android-build-tools-24-installer \
 		google-android-ndk-installer \
 		android-sdk-helper  \
-		android-sdk 
+		android-sdk \
+		libncurses5
 	git clone https://github.com/mherod/android-sdk-licenses.git 
 	sudo cp -a android-sdk-licenses/. /usr/lib/android-sdk/licenses 
 	
